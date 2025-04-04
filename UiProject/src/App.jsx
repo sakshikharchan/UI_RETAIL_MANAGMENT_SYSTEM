@@ -17,6 +17,7 @@ import Banner2 from './assets/fash3.jpg';
 function App() {
   return (
     <BrowserRouter>
+      <h1>hello</h1>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark position-relative">
         <div className="container-fluid d-flex justify-content-between align-items-center">
 
