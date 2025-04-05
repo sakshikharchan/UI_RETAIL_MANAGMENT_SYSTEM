@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+/*====Login css====*/
+.card{
+  background-color:#f0f0;
+  display: inline-block;
+  margin: 10px;
+}
+
+
 .zudio-logo {
   height: 60px;
   transition: transform 0.3s ease;
