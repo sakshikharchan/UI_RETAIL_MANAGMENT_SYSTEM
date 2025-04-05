@@ -3,13 +3,13 @@ import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Men from './Component/Men.jsx';
+import Home from './Component/Home.jsx';
 
 
 import './App.css';
 
-import Banner from './assets/fash2.png';
-import Banner1 from './assets/fash1.jpg';
-import Banner2 from './assets/fash3.jpg';
+
+import Login from './Component/Login.jsx';
 
 
 
@@ -17,10 +17,10 @@ import Banner2 from './assets/fash3.jpg';
 function App() {
   return (
     <BrowserRouter>
-
+      <h1>hello</h1>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark position-relative">
         <div className="container-fluid d-flex justify-content-between align-items-center">
-
+        <NavLink className="zudio-logo navbar-brand fs-3" to="/">ZUDIO</NavLink>
           <div className="d-flex gap-5 align-items-center nav-left">
             <NavLink className="nav-link text-light" to="/">Home</NavLink>
             <NavLink className="nav-link text-light" to="/men">Men</NavLink>
@@ -28,9 +28,6 @@ function App() {
             <NavLink className="nav-link text-light" to="/kids">Kids</NavLink>
           </div>
 
-          <div className="logo-container position-absolute top-50 start-50 translate-middle">
-            <NavLink className="zudio-logo navbar-brand fs-3" to="/">ZUDIO</NavLink>
-          </div>
 
           <div className="d-flex align-items-center gap-3 nav-right">
             <form className="d-flex">
@@ -72,6 +69,8 @@ function App() {
               <p>Men, Women, and Kids</p>
             </div>
           </div>
+
+
         </div>
 
 
@@ -79,12 +78,10 @@ function App() {
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Previous</span>
         </button>
-
         <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
-
       </div>
 
       <div className="text-center py-5 bg-primary text-white">
@@ -94,12 +91,13 @@ function App() {
       </div>
 
       <Routes>
-        <Route path="/" element={<h1 className="text-center mt-4 animate__animated animate__fadeIn">Welcome to Zudio</h1>} />
-        <Route path="/men" element={<h1 className="text-center mt-4 animate__animated animate__fadeIn">Men's Fashion</h1>} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/men" element={<Men/>} />
         <Route path="/women" element={<h1 className="text-center mt-4 animate__animated animate__fadeIn">Women's Fashion</h1>} />
         <Route path="/kids" element={<h1 className="text-center mt-4 animate__animated animate__fadeIn">Kids' Fashion</h1>} />
-        <Route path="/login" element={<h1 className="text-center mt-4 animate__animated animate__fadeIn">Login Page</h1>} />
+        <Route path="/login" className="login" element={<Login/>} />
       </Routes>
+   
     </BrowserRouter>
   );
 }
