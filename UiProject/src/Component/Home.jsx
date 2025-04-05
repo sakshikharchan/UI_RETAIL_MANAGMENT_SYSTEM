@@ -7,8 +7,12 @@ export default function Home() {
   return (
     <>
       {/* <h1>I am Home componet</h1> */}
+<<<<<<< Updated upstream
 
 
+=======
+  
+>>>>>>> Stashed changes
       <Carozol />
       <Men />
       <br></br>

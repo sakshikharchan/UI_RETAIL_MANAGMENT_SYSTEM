@@ -6,6 +6,12 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Men from './Component/Men.jsx';
 import Women from './Component/Women.jsx'
 import Home from './Component/Home.jsx';
+<<<<<<< Updated upstream
+=======
+
+
+
+>>>>>>> Stashed changes
 import './App.css';
 import Login from './Component/Login.jsx';
 
@@ -13,7 +19,11 @@ import Login from './Component/Login.jsx';
 function App() {
   return (
     <BrowserRouter>
+<<<<<<< Updated upstream
 
+=======
+    
+>>>>>>> Stashed changes
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark position-relative">
         <div className="container-fluid d-flex justify-content-between align-items-center">
           <NavLink className="zudio-logo navbar-brand fs-3" to="/">ZUDIO</NavLink>
@@ -36,7 +46,11 @@ function App() {
         </div>
       </nav>
 
+<<<<<<< Updated upstream
 
+=======
+     
+>>>>>>> Stashed changes
 
       <Routes>
         <Route path="/" element={<Home />} />
