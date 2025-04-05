@@ -1,5 +1,5 @@
 import React from 'react'
-import Carozol from './carozol'
+import Carozol from './Carozol'
 import Men from './Men'
 import Women from './Women'
 
