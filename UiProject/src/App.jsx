@@ -17,7 +17,7 @@ import Banner2 from './assets/fash3.jpg';
 function App() {
   return (
     <BrowserRouter>
-      <h1>hello</h1>
+
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark position-relative">
         <div className="container-fluid d-flex justify-content-between align-items-center">
 
@@ -72,8 +72,6 @@ function App() {
               <p>Men, Women, and Kids</p>
             </div>
           </div>
-
-
         </div>
 
 
@@ -81,10 +79,12 @@ function App() {
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Previous</span>
         </button>
+
         <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
+
       </div>
 
       <div className="text-center py-5 bg-primary text-white">
