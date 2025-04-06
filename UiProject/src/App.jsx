@@ -28,8 +28,12 @@ function App() {
 
           <div className="d-flex align-items-center gap-3 nav-right">
             <form className="d-flex">
-              <input className="form-control me-2" type="search" placeholder="Search" />
-              <button className="btn btn-outline-light" type="submit">Search</button>
+            <div className="search-bar">
+         <input type="text" placeholder="Search here..." />
+        <button type="submit">🔍</button>
+          </div>
+
+             
             </form>
 
             <NavLink className="nav-link text-light" to="/login">Login</NavLink>
