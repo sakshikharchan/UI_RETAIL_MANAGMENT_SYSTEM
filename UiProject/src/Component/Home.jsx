@@ -2,6 +2,7 @@ import React from 'react'
 import Carozol from './Carozol'
 import Men from './Men'
 import Women from './Women'
+import Kids from './Kids'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Men />
       <br></br>
       <Women />
+      <Kids
 
 
     </>
