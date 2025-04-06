@@ -1,7 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Banner from '../assets/fash1.jpg';
+import Banner from '../assets/fash1.avif';
+import Banner1 from '../assets/fash2.png';
+import Banner2 from '../assets/fash3.avif';
+
+
 
 import '../App.css';
 let Kids = () => {

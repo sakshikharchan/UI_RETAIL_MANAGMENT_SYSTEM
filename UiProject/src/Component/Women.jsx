@@ -1,7 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Banner from '../assets/fash1.jpg';
+
+import card1 from './assets/Women1.jpg';
+import card2 from './assets/Women2.jpg';
+import card3 from './assets/Women3.jpg';
+
 
 import '../App.css';
 let Women = () => {
@@ -10,7 +14,7 @@ let Women = () => {
     return (<>
 
         <div className="card" style={{ width: "18rem" }}>
-            <img src={Banner} className="card-img-top" alt="..." />
+            <img src={card1} className="card-img-top" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -31,7 +35,7 @@ let Women = () => {
 
         {/* card 2 */}
         <div className="card" style={{ width: "18rem" }}>
-            <img src={Banner} className="card-img-top" alt="..." />
+            <img src={card2} className="card-img-top" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -50,7 +54,7 @@ let Women = () => {
 
         {/* card 3 */}
         <div className="card" style={{ width: "18rem" }}>
-            <img src={Banner} className="card-img-top" alt="..." />
+            <img src={card3} className="card-img-top" alt="..." />
             <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
