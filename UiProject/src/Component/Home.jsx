@@ -1,13 +1,25 @@
 import React from 'react'
-import Carozol from './carozol'
+import Carozol from './Carozol'
 import Men from './Men'
+import Women from './Women'
+import Kids from './Kids'
+
+
 
 export default function Home() {
   return (
-   <>
-    {/* <h1>I am Home componet</h1> */}
-    <Carozol/>
-    <Men/>
-   </>
+    <>
+
+
+
+      <Carozol />
+      <Men />
+      <br></br>
+      <Women />
+      <br></br>
+      <Kids />
+
+
+    </>
   )
 }
