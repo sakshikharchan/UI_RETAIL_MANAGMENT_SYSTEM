@@ -1,39 +1,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 import card1 from '../assets/women1.jpg';
 import card2 from '../assets/women2.jpg';
 import card3 from '../assets/women3.jpg';
 import card4 from '../assets/women4.jpg';
-
-
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-
-import Banner from '../Image/fash1.jpg';
-import Banner1 from '../Image/fash2.jpg';
-import Banner2 from '../Image/fash3.jpg';
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-
 import '../App.css';
 let Women = () => {
 
@@ -62,23 +33,9 @@ let Women = () => {
 
         {/* card 2 */}
         <div className="card" style={{ width: "18rem" }}>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
             <img src={card2} className="card-img-top" alt="..." />
-=======
-            <img src={Banner1} className="card-img-top" alt="..." />
->>>>>>> Stashed changes
-=======
-            <img src={Banner1} className="card-img-top" alt="..." />
->>>>>>> Stashed changes
-=======
-            <img src={Banner1} className="card-img-top" alt="..." />
->>>>>>> Stashed changes
-=======
-            <img src={Banner1} className="card-img-top" alt="..." />
->>>>>>> Stashed changes
+
             <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -97,20 +54,9 @@ let Women = () => {
 
         {/* card 3 */}
         <div className="card" style={{ width: "18rem" }}>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
+
             <img src={card3} className="card-img-top" alt="..." />
-=======
-            <img src={Banner2} className="card-img-top" alt="..." />
->>>>>>> Stashed changes
-=======
-            <img src={Banner2} className="card-img-top" alt="..." />
->>>>>>> Stashed changes
-=======
-            <img src={Banner2} className="card-img-top" alt="..." />
->>>>>>> Stashed changes
+
             <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -134,9 +80,8 @@ let Women = () => {
 
         <div className="card" style={{ width: "18rem" }}>
             <img src={card4} className="card-img-top" alt="..." />
-=======
-            <img src={Banner2} className="card-img-top" alt="..." />
->>>>>>> Stashed changes
+
+          
             <div className="card-body">
                 <h5 className="card-title">Card title</h5>
                 <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
