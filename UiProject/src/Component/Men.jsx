@@ -13,12 +13,12 @@ let Men = () => {
     return (<>
 
 
-<div className="bg-top-image d-flex align-items-center text-white">
-  <div className="container py-5 text-center">
-    <h1 className="display-4 fw-bold">Welcome to Fashion Hub</h1>
-    <p className="lead">Style that defines you.</p>
-  </div>
-</div>
+        <div className="bg-top-image d-flex align-items-center text-white">
+            <div className="container py-5 text-center">
+                <h1 className="display-4 fw-bold">Welcome to Mens Fashion Hub</h1>
+                <p className="lead">Style that defines you.</p>
+            </div>
+        </div>
 
 
 
