@@ -1,13 +1,17 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import react from "react";
 import reactDom from "react-dom";
 =======
+=======
+>>>>>>> Stashed changes
 
 import reactDom from 'react-dom'
 import React from 'react';
 import Banner from '../Image.fash1.jpg';
 import Banner1 from '../Image/fash2.jpg';
 import Banner2 from '../Image/fash3.jpg';
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 
 import Banner from "../assets/fash2.png";
@@ -36,6 +40,26 @@ let Carozol = () => {
                     <div className="carousel-caption d-none d-md-block">
                         <h5>New Arrivals</h5>
                         <p>Explore the latest fashion trends</p>
+=======
+
+
+
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import '../App.css';
+
+
+let Carozol = () => {
+    return (<>
+        <div id="carouselExampleControls" className="carousel slide mt-3" data-bs-ride="carousel">
+            <div className="carousel-inner">
+                <div className="carousel-item active">
+                    <img src={Banner} className="d-block w-100" alt="Fashion Banner 1" />
+                    <div className="carousel-caption d-none d-md-block">
+                        <h5>New Arrivals</h5>
+                        <p>Explore the latest fashion trends</p>
                     </div>
                 </div>
 
@@ -46,10 +70,29 @@ let Carozol = () => {
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Trendy Styles</h5>
                         <p>Fashion for every season</p>
+>>>>>>> Stashed changes
                     </div>
                 </div>
 
 
+
+                <div className="carousel-item">
+<<<<<<< Updated upstream
+                    <img src={Banner1} className="d-block w-100" alt="Fashion Banner 2" />
+                    <div className="carousel-caption d-none d-md-block">
+                        <h5>Trendy Styles</h5>
+                        <p>Fashion for every season</p>
+=======
+                    <img src={Banner2} className="d-block w-100" alt="Fashion Banner 3" />
+                    <div className="carousel-caption d-none d-md-block">
+                        <h5>Stylish for All</h5>
+                        <p>Men, Women, and Kids</p>
+>>>>>>> Stashed changes
+                    </div>
+                </div>
+
+
+<<<<<<< Updated upstream
 
                 <div className="carousel-item">
                     <img src={Banner2} className="d-block w-100" alt="Fashion Banner 3" />
@@ -63,6 +106,11 @@ let Carozol = () => {
             </div>
 
 
+=======
+            </div>
+
+
+>>>>>>> Stashed changes
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>

@@ -10,7 +10,11 @@ export default function Home() {
   return (
     <>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+     
+>>>>>>> Stashed changes
 =======
      
 >>>>>>> Stashed changes
