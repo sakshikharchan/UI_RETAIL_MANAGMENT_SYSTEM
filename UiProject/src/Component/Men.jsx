@@ -3,11 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import Banner from '../assets/men1.jpg';
 import Banner2 from '../assets/men2.jpg';
 import Banner3 from '../assets/men3.jpg';
 import Banner4 from '../assets/men4.jpg';
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 
@@ -16,6 +19,9 @@ import men2 from '../Image/fash2.jpg';
 import men3 from '../Image/fash3.jpg';
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -28,12 +34,15 @@ let Men = () => {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
         <div className="bg-top-image d-flex align-items-center text-white">
             <div className="container py-5 text-center">
                 <h1 className="display-4 fw-bold">Welcome to Mens Fashion Hub</h1>
                 <p className="lead">Style that defines you.</p>
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         <div className="card" style={{ width: "18rem" }}>
@@ -52,6 +61,9 @@ let Men = () => {
                 <a href="#" className="card-link">Another link</a>
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -62,8 +74,14 @@ let Men = () => {
 
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <div className="card" style={{ width: "18rem" }}>
             <img src={Banner} className="card-img-top" alt="..." />
+=======
+        {/* card 2 */}
+        <div className="card" style={{ width: "18rem" }}>
+            <img src={men2} className="card-img-top" alt="..." />
+>>>>>>> Stashed changes
 =======
         {/* card 2 */}
         <div className="card" style={{ width: "18rem" }}>
@@ -106,6 +124,7 @@ let Men = () => {
                 <a href="#" className="card-link">Card link</a>
                 <a href="#" className="card-link">Another link</a>
 
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
 
@@ -164,6 +183,12 @@ let Men = () => {
             </div>
         </div>
 
+=======
+            </div>
+        </div>
+
+
+>>>>>>> Stashed changes
 =======
             </div>
         </div>
