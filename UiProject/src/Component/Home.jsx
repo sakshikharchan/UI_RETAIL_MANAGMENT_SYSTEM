@@ -9,7 +9,11 @@ import Kids from './Kids'
 export default function Home() {
   return (
     <>
+<<<<<<< Updated upstream
 
+=======
+     
+>>>>>>> Stashed changes
 
 
       <Carozol />

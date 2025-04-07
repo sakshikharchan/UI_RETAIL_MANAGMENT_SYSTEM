@@ -1,12 +1,32 @@
+<<<<<<< Updated upstream
 import react from "react";
 import reactDom from "react-dom";
+=======
+
+import reactDom from 'react-dom'
+import React from 'react';
+import Banner from '../Image.fash1.jpg';
+import Banner1 from '../Image/fash2.jpg';
+import Banner2 from '../Image/fash3.jpg';
+>>>>>>> Stashed changes
 
 import Banner from "../assets/fash2.png";
 import Banner1 from "../assets/fash1.jpg";
 import Banner2 from "../assets/fash3.jpg";
 
+<<<<<<< Updated upstream
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
+=======
+
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import '../App.css';
+
+
+>>>>>>> Stashed changes
 let Carozol = () => {
     return (<>
         <div id="carouselExampleControls" className="carousel slide mt-3" data-bs-ride="carousel">
