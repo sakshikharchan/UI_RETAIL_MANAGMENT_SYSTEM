@@ -1,8 +1,10 @@
+
 import react from "react";
 import reactDom from "react-dom";
 import Banner from '../Image.fash1.jpg';
 import Banner1 from '../Image/fash2.jpg';
 import Banner2 from '../Image/fash3.jpg';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '../App.css';
@@ -52,6 +54,7 @@ let Carozol = () => {
                 <span className="visually-hidden">Next</span>
             </button>
         </div>
+
 
         <div className="text-center py-5 bg-primary text-white">
             <h2 className="display-5">Shop the Latest Styles at Zudio</h2>
