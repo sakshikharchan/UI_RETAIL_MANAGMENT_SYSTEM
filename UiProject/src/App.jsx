@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -7,10 +6,9 @@ import Men from './Component/Men.jsx';
 import Women from './Component/Women.jsx';
 import Kids from './Component/Kids.jsx';
 import Home from './Component/Home.jsx';
-import './App.css';
 import Login from './Component/Login.jsx';
-
-
+import NewUser from './Component/NewUser.jsx';
+import './App.css';
 
 function App() {
   return (
@@ -25,15 +23,12 @@ function App() {
             <NavLink className="nav-link text-light" to="/kids">Kids</NavLink>
           </div>
 
-
           <div className="d-flex align-items-center gap-3 nav-right">
             <form className="d-flex">
-            <div className="search-bar">
-         <input type="text" placeholder="Search here..." />
-        <button type="submit">🔍</button>
-          </div>
-
-             
+              <div className="search-bar">
+                <input type="text" placeholder="Search here..." />
+                <button type="submit">🔍</button>
+              </div>
             </form>
 
             <NavLink className="nav-link text-light" to="/login">Login</NavLink>
@@ -46,9 +41,10 @@ function App() {
         <Route path="/men" element={<Men />} />
         <Route path="/women" element={<Women />} />
         <Route path="/kids" element={<Kids />} />
-        <Route path="/login" className="login" element={<Login />} />
-      </Routes>
+        <Route path="/login" element={<Login />}/>
+        <Route path="/newuser" element={<NewUser />} />
 
+      </Routes>
     </BrowserRouter>
   );
 }
