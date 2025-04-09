@@ -46,7 +46,7 @@ let NewUser = () => {
                                                       <button type="submit" className="btn btn-primary" style={{backgroundColor:"green"}}>CreateNewUser</button>
                                                   </div>
                                               </form>
-                                              <Link to="/login" style={{color:"blue" }}>← Back to Login</Link>
+                                              <Link to="/login" style={{color:"blue" }}>---Back to Login</Link>
                                             </div>
                                       </div>
                                   </div>
