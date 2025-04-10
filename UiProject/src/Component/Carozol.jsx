@@ -45,6 +45,8 @@ let Carozol = () => {
 
             </div>
 
+
+
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
@@ -54,7 +56,6 @@ let Carozol = () => {
                 <span className="visually-hidden">Next</span>
             </button>
         </div>
-
 
         <div className="text-center py-5 bg-primary text-white">
             <h2 className="display-5">Shop the Latest Styles at Zudio</h2>
