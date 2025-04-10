@@ -1,10 +1,13 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-import Banner from '../assets/men1.jpg';
-import Banner2 from '../assets/men2.jpg';
-import Banner3 from '../assets/men3.jpg';
-import Banner4 from '../assets/men4.jpg';
+
+
+import men1 from '../assets/men1.jpg';
+import men2 from '../assets/men2.jpg';
+import men3 from '../assets/men3.jpg';
+
+
 
 import '../App.css';
 let Men = () => {
@@ -78,6 +81,7 @@ let Men = () => {
                 <a href="#" className="card-link">Another link</a>
 
             </div>
+
         </div>
         <div className="card" style={{ width: "18rem" }}>
             <img src={Banner4} className="card-img-top" alt="..." />

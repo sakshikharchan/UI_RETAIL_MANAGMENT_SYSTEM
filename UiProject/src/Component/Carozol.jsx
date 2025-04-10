@@ -1,9 +1,15 @@
 import react from "react";
 import reactDom from "react-dom";
+<<<<<<< Updated upstream
 
 import Banner from "../assets/fash2.png";
 import Banner1 from "../assets/fash1.jpg";
 import Banner2 from "../assets/fash3.jpg";
+=======
+import Banner from '../assets/fash1.jpg';
+import Banner1 from '../assets/fash2.png';
+import Banner2 from '../assets/fash3.jpg';
+>>>>>>> Stashed changes
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
@@ -11,6 +17,7 @@ let Carozol = () => {
     return (<>
         <div id="carouselExampleControls" className="carousel slide mt-3" data-bs-ride="carousel">
             <div className="carousel-inner">
+                
                 <div className="carousel-item active">
                     <img src={Banner} className="d-block w-100" alt="Fashion Banner 1" />
                     <div className="carousel-caption d-none d-md-block">
