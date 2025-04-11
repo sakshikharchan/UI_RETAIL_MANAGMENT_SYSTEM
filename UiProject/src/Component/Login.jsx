@@ -1,7 +1,29 @@
 import React from "react";
 import { Link, Outlet } from 'react-router-dom';
 
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 let Login = () => {
+    const [userName, setUserName] = useState('');
+    const [password, setPassword] = useState('');
+    const navigate = useNavigate();
+  
+    const handleLogin = (e) => {
+      e.preventDefault();
+  
+      axios.post('http://localhost:8080/login', { userName, password })
+        .then((res) => {
+          const redirect = res.data;
+  
+          if (redirect.includes('admin')) navigate('/admin/dashboard');
+          else if (redirect.includes('manager')) navigate('/manager/dashboard');
+          else if (redirect.includes('cashier')) navigate('/cashier/dashboard');
+          else alert('Invalid role or credentials');
+        })
+        .catch((err) => {
+          alert('Login error: ' + err.message);
+        });
+    };
     return (
         <>
             <div className="container">

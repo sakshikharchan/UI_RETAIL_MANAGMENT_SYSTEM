@@ -36,7 +36,7 @@ function App() {
         </div>
       </nav>
 
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/men" element={<Men />} />
         <Route path="/women" element={<Women />} />
@@ -44,7 +44,7 @@ function App() {
         <Route path="/login" element={<Login />}/>
         <Route path="/newuser" element={<NewUser />} />
 
-      </Routes>
+      </Routes> */}
     </BrowserRouter>
   );
 }
