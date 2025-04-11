@@ -1,6 +1,4 @@
-
-import react from "react";
-import reactDom from "react-dom";
+import React from "react";
 import Banner from '../Image.fash1.jpg';
 import Banner1 from '../Image/fash2.jpg';
 import Banner2 from '../Image/fash3.jpg';
@@ -46,7 +44,6 @@ let Carozol = () => {
             </div>
 
 
-
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
@@ -63,8 +60,17 @@ let Carozol = () => {
             <button className="btn btn-light mt-3">Explore Now</button>
         </div>
 
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+        </button>
 
-    </>)
 
+    </>
+    );
 }
 export default Carozol;
