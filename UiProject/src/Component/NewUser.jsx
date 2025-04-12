@@ -4,10 +4,17 @@ import Login from "./Login";
 
 let NewUser = () => {
     const [formData, setFormData] = React.useState({
-        username: '',
-        password: '',
-        rollId: ''
+        username: 'pooja',
+        password: 'pooja123',
+        rollId: 1,
     });
+    const handleChange = (event) => {
+        const { name, value } = event.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
+    }
     const handleSubmit = (event) => {
         event.preventDefault(); 
         const formData = new FormData(event.target);
@@ -31,15 +38,15 @@ let NewUser = () => {
                                               <form onSubmit={handleSubmit}>
                                                   <div className="mb-3">
                                                       <label htmlFor="username" className="form-label">UserName</label>
-                                                      <input type="text" className="form-control" id="username" name="username" required />
+                                                      <input type="text" className="form-control" id="username" value={formData.username} name="username"  onChange={(e)=>handleChange(e)} />
                                                   </div>
                                                   <div className="mb-3">
                                                       <label htmlFor="password" className="form-label">Password</label>
-                                                      <input type="password" className="form-control" id="password" name="password" required />
+                                                      <input type="password" className="form-control" id="password" name="password" value={formData.password} onChange={(e)=>handleChange(e)} />
                                                   </div>
                                                   <div className="mb-3">
                                                       <label htmlFor="rollId" className="form-label">RollId</label>
-                                                      <input type="text" className="form-control" id="rollId" name="rollId" required />
+                                                      <input type="text" className="form-control" id="rollId" name="rollId" value={formData.rollId} onChange={(e)=>handleChange(e)} />
                                                   </div>
                                                   <div className="d-grid">
                                                     <br />
