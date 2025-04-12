@@ -1,29 +1,32 @@
-import React from 'react';
+import react from "react";  
 import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import Men from './Component/Men.jsx';
-import Women from './Component/Women.jsx';
-import Kids from './Component/Kids.jsx';
+
 import Home from './Component/Home.jsx';
-import Login from './Component/Login.jsx';
+
 import NewUser from './Component/NewUser.jsx';
 import './App.css';
-import ManagerDashBoard from './ManagerDasgBoard.jsx';
+let ManagerDashBoard = () => {
 
-function App() {
-  return (
-    <BrowserRouter>
+return(<>
+ <h1>Hi I am  ManagerDashBoard</h1>
+
+
+ {/* <BrowserRouter> */}
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark position-relative">
         <div className="container-fluid d-flex justify-content-between align-items-center">
           <NavLink className="zudio-logo navbar-brand fs-3" to="/">ZUDIO</NavLink>
           <div className="d-flex gap-5 align-items-center nav-left">
-            <NavLink className="nav-link text-light" to="/">Home</NavLink>
-            <NavLink className="nav-link text-light" to="/men">Men</NavLink>
-            <NavLink className="nav-link text-light" to="/women">Women</NavLink>
-            <NavLink className="nav-link text-light" to="/kids">Kids</NavLink>
+            <NavLink 
+              className={({ isActive }) => isActive ? "nav-link text-warning" : "nav-link text-light"} 
+              to="/">
+              Home
+            </NavLink>
+          
           </div>
-
+          
           <div className="d-flex align-items-center gap-3 nav-right">
             <form className="d-flex">
               <div className="search-bar">
@@ -38,17 +41,12 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/men" element={<Men />} />
-        <Route path="/women" element={<Women />} />
-        <Route path="/kids" element={<Kids />} />
-        <Route path="/login" element={<Login />}/>
+        {/* <Route path="/" element={<Home />} /> */}
         <Route path="/newuser" element={<NewUser />} />
-        <Route path="/manager" element={<ManagerDashBoard />} />
 
       </Routes>
-    </BrowserRouter>
-  );
-}
+    {/* </BrowserRouter> */}
+</>)
 
-export default App;
+}
+export default ManagerDashBoard;

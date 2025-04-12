@@ -1,16 +1,8 @@
-import react from "react";
-import reactDom from "react-dom";
-<<<<<<< Updated upstream
-
-import Banner from "../assets/fash2.png";
+import React from "react";
+import ReactDom from 'react-dom'
+import Banner from "../assets/fash1.jpg";
 import Banner1 from "../assets/fash1.jpg";
 import Banner2 from "../assets/fash3.jpg";
-=======
-import Banner from '../assets/fash1.jpg';
-import Banner1 from '../assets/fash2.png';
-import Banner2 from '../assets/fash3.jpg';
->>>>>>> Stashed changes
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 let Carozol = () => {

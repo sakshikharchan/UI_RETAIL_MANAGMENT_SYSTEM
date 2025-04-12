@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+/* .card{
+  display: inline-block;
+  padding: 5px;
+  margin-top: 0%;
+  margin: 20px;
+  width: 500px;
+  min-height: 180px;
+} */
 .zudio-logo {
   height: 60px;
   transition: transform 0.3s ease;

@@ -5,11 +5,6 @@ import Banner from '../assets/kids1.jpg';
 import Banner2 from '../assets/kids2.jpg';
 import Banner3 from '../assets/kid4.jpg';
 import Banner4 from '../assets/kids3.jpg';
-
-
-
-
-
 import '../App.css';
 let Kids = () => {
 
