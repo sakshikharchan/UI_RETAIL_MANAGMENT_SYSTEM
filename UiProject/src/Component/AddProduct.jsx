@@ -19,28 +19,36 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-   
-    
+       
     try {
-      const response = await axios.post('http://localhost:8080/api/User/login', 
-        
-        {
-          userName: user.username,
-          password: user.password,
-          roleID: parseInt(user.role)
-        }
-      );
-      if (response.status===200) {
-        alert('Login successful');
-        navigate('/manager');
-      } else {
-        alert('Login failed. Please check your credentials.');
-      }
+      console.log(user.username);
+      console.log(user.password);
+      console.log(user.role);
+      const response = await axios.post('http://localhost:8080/api/User/login', {
+        userName: user.username,
+        password: user.password,
+        roleId: parseInt(user.role)
+      });
+
+
+      console.log(response.data);
+
+      const { role } = response.data;
+      alert('Login successful');
+      navigate(role === user.role ? '/manager' : role === user.role? '/adminDashboard' : '/cashier');
     } catch (error) {
-      console.error('Error during login:', error);
-      alert('An error occurred. Please try again later.');
+      if (error.response) {
+        // Handle specific backend error responses
+        const status = error.response.status;
+        const message = error.response.data.message || 'Unknown error occurred.';
+        alert(`Error (${status}): ${message}`);
+      } else {
+        // Handle other errors like network issues
+        alert('Network error or server unavailable. Please try again later.');
+      }
     }
-  }
+    
+  };
 
   
 
@@ -59,7 +67,6 @@ const Login = () => {
                     className="img-fluid login-img"
                     style={{ height: '100%', objectFit: 'cover' }}
                   />
-
                 </div>
 
                 {/* Right Form */}
@@ -100,7 +107,7 @@ const Login = () => {
 
                       <div className="mb-3">
                         <label htmlFor="role" className="form-label">
-                          {/* Role (1 = Manager, 2 = Admin, 3 = Cashier) */}
+                          Role (1 = Manager, 2 = Admin, 3 = Cashier)
                         </label>
                         <input
                           type="text"
