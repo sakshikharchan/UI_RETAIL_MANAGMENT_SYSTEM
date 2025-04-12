@@ -1,13 +1,17 @@
+
 import react from "react";
 import reactDom from "react-dom";
-
 import Banner from '../assets/fash1.jpg';
 import Banner1 from '../assets/fash2.png';
 import Banner2 from '../assets/fash3.jpg';
 
 
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '../App.css';
+
+
 let Carozol = () => {
     return (<>
         <div id="carouselExampleControls" className="carousel slide mt-3" data-bs-ride="carousel">
@@ -44,7 +48,6 @@ let Carozol = () => {
 
             </div>
 
-
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
@@ -54,6 +57,7 @@ let Carozol = () => {
                 <span className="visually-hidden">Next</span>
             </button>
         </div>
+
 
         <div className="text-center py-5 bg-primary text-white">
             <h2 className="display-5">Shop the Latest Styles at Zudio</h2>
