@@ -59,6 +59,7 @@ const Login = () => {
                     className="img-fluid login-img"
                     style={{ height: '100%', objectFit: 'cover' }}
                   />
+
                 </div>
 
                 {/* Right Form */}

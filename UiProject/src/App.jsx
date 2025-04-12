@@ -69,7 +69,7 @@ function App() {
             </nav>
 
 
-      <Routes>
+      {/* <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/men" element={<Men />} />
         <Route path="/women" element={<Women />} />
@@ -78,7 +78,7 @@ function App() {
         <Route path="/newuser" element={<NewUser />} />
         <Route path="/manager" element={<ManagerDashBoard />} />
 
-      </Routes>
+      </Routes> */}
     </BrowserRouter>
   );
 

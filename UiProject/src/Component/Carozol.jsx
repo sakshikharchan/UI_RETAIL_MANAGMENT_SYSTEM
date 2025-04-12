@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import ReactDom from 'react-dom'
 import Banner from "../assets/fash1.jpg";
@@ -16,7 +17,7 @@ let Carozol = () => {
     return (<>
         <div id="carouselExampleControls" className="carousel slide mt-3" data-bs-ride="carousel">
             <div className="carousel-inner">
-                
+
                 <div className="carousel-item active">
                     <img src={Banner} className="d-block w-100" alt="Fashion Banner 1" />
                     <div className="carousel-caption d-none d-md-block">
@@ -38,7 +39,7 @@ let Carozol = () => {
 
 
                 <div className="carousel-item">
-                    <img src={Banner2} className="d-block w-100" alt="Fashion Banner 3" />
+                    {/* <img src={Banner2} className="d-block w-100" alt="Fashion Banner 3" /> */}
                     <div className="carousel-caption d-none d-md-block">
                         <h5>Stylish for All</h5>
                         <p>Men, Women, and Kids</p>
@@ -47,6 +48,7 @@ let Carozol = () => {
 
 
             </div>
+
 
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -58,15 +60,23 @@ let Carozol = () => {
             </button>
         </div>
 
-
         <div className="text-center py-5 bg-primary text-white">
             <h2 className="display-5">Shop the Latest Styles at Zudio</h2>
             <p>Affordable fashion for Men, Women, and Kids</p>
             <button className="btn btn-light mt-3">Explore Now</button>
         </div>
 
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+        </button>
+        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+        </button>
 
-    </>)
 
+    </>
+    );
 }
 export default Carozol;

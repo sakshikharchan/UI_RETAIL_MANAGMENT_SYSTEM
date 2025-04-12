@@ -6,6 +6,7 @@ import ManagerDashBoard from './ManagerDashBoard.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    
     <App />
     {/* <ManagerDashBoard /> */}
   </StrictMode>
