@@ -1,9 +1,11 @@
 
-import react from "react";
-import reactDom from "react-dom";
-import Banner from '../Image.fash1.jpg';
-import Banner1 from '../Image/fash2.jpg';
-import Banner2 from '../Image/fash3.jpg';
+import React from "react";
+import ReactDom from 'react-dom'
+import Banner from "../assets/fash1.jpg";
+import Banner1 from "../assets/fash1.jpg";
+import Banner2 from "../assets/fash3.jpg";
+
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
@@ -14,6 +16,7 @@ let Carozol = () => {
     return (<>
         <div id="carouselExampleControls" className="carousel slide mt-3" data-bs-ride="carousel">
             <div className="carousel-inner">
+                
                 <div className="carousel-item active">
                     <img src={Banner} className="d-block w-100" alt="Fashion Banner 1" />
                     <div className="carousel-caption d-none d-md-block">
